@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrutalExe - Exe4Us</title>
 
   <!-- 
-    - favicon link
+    - primary meta tags
+  -->
+  <title>BrutalExe - Epic Tournaments Made For True Gamers!</title>
+  <meta name="title" content="BrutalExe - Epic Tournaments Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by BrutalExe">
+
+  <!-- 
+    - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
     - google font link
@@ -23,8 +24,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
     rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+
 </head>
 
 <body id="top">
@@ -33,115 +46,44 @@
     - #HEADER
   -->
 
-  <header class="header">
-
-    <!-- 
-      - overlay
-    -->
-    <div class="overlay" data-overlay></div>
-
+  <header class="header active" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="BrutalExe logo">
+        <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
       </a>
 
-      <button class="nav-open-btn" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-nav>
-
-        <div class="navbar-top">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="BrutalExe logo">
-          </a>
-
-          <button class="nav-close-btn" data-nav-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-        </div>
-
+      <nav class="navbar" data-navbar>
         <ul class="navbar-list">
 
-          <li>
-            <a href="#hero" class="navbar-link">Home</a>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>home</a>
           </li>
 
-          <li>
-            <a href="#about" class="navbar-link">About</a>
+          <li class="navbar-item">
+            <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
           </li>
 
-          <li>
-            <a href="#tournament" class="navbar-link">Tournament</a>
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link" data-nav-link>news</a>
           </li>
 
-          <li>
-            <a href="#team" class="navbar-link">Team</a>
-          </li>
-
-          <li>
-            <a href="#gears" class="navbar-link">Gears</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact</a>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>contact</a>
           </li>
 
         </ul>
-
-        <ul class="nav-social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
       </nav>
 
-      <div class="header-actions">
+      <a href="#" class="btn" data-btn>join our team</a>
 
-        <button class="search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <button class="btn-sign_in">
-
-          <div class="icon-box">
-            <ion-icon name="log-in-outline"></ion-icon>
-          </div>
-
-          <span>Log-in</span>
-
-        </button>
-
-      </div>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
 
     </div>
-
   </header>
 
 
@@ -155,23 +97,176 @@
         - #HERO
       -->
 
-      <section class="hero" id="hero">
+      <div class="hero has-before" id="home">
         <div class="container">
 
-          <p class="hero-subtitle">The Season 8</p>
+          <p class="section-subtitle">Enjoy The Games</p>
 
-          <h1 class="h1 hero-title">Steam</h1>
+          <h1 class="h1 title hero-title">Epic Tournaments Made For <br> True Gamers!</h1>
 
-          <div class="btn-group">
+          <a href="https://youtube.com/channel/UCI0YEAKVGUL9exUE_xq0RJg" target="_blank" class="btn" data-btn>Join With Us</a>
 
-            <button class="btn btn-primary">
-              <a href="https://www.youtube.com/channel/UCI0YEAKVGUL9exUE_xq0RJg"><span>Watch live</span></a>
-              <ion-icon name="play-circle"></ion-icon>
-            </button>
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
 
-            <button class="btn btn-link">Dream making</button>
-
+            <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
           </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #UPCOMING
+      -->
+
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+        <div class="container">
+
+          <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">
+            Upcoming Matches
+          </p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Battles Extreme <br> Masters <span class="span">Tournament</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ol class="upcoming-list">
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy"
+                  alt="Purple Death Cadets" class="card-banner">
+
+                <h3 class="h3 card-title">Purple Death Cadets</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">10:00</time>
+
+                <time class="date" datetime="2022-05-25">25TH May 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy"
+                  alt="Trigger Brain Squad" class="card-banner">
+
+                <h3 class="h3 card-title">Trigger Brain Squad</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy"
+                  alt="The Black Hat Hackers" class="card-banner">
+
+                <h3 class="h3 card-title">The Black Hat Hackers</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="12:30">12:30</time>
+
+                <time class="date" datetime="2024-01-10">10TH Jan 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy"
+                  alt="Your Worst Nightmare" class="card-banner">
+
+                <h3 class="h3 card-title">Your Worst Nightmare</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-5.png" width="86" height="81" loading="lazy"
+                  alt="Witches And Quizards" class="card-banner">
+
+                <h3 class="h3 card-title">Witches And Quizards</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="04:20">04:20</time>
+
+                <time class="date" datetime="2024-12-15">15th Dec 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-6.png" width="86" height="81" loading="lazy"
+                  alt="Resting Bitch Faces" class="card-banner">
+
+                <h3 class="h3 card-title">Resting Bitch Faces</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+            </li>
+
+          </ol>
 
         </div>
       </section>
@@ -180,507 +275,158 @@
 
 
 
-      <div class="section-wrapper">
+      <!-- 
+        - #NEWS
+      -->
 
-        <!-- 
-          - #ABOUT
-        -->
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
 
-        <section class="about" id="about">
-          <div class="container">
+          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
 
-            <figure class="about-banner">
+          <h2 class="h2 section-title" data-reveal="bottom">
+            News And <span class="span">Headlines</span>
+          </h2>
 
-              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
 
-              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+          <ul class="news-list">
 
-              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+            <li data-reveal="bottom">
+              <div class="news-card">
 
-              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
-
-            </figure>
-
-            <div class="about-content">
-
-              <p class="about-subtitle">Find team member</p>
-
-              <h2 class="about-title">Experience just for gamers <strong>offer</strong> </h2>
-
-              <p class="about-text">
-                Nullam quis ante. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum
-                viverra felis nunc
-                et lorem. In auctor lobortis lacus. Phasellus gravida semper nisi. Aliquam lobortis.
-              </p>
-
-              <p class="about-bottom-text">
-                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-
-                <span>Will sharpen your brain and focus</span>
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-
-
-
-
-
-        <!-- 
-          - #TOURNAMENT
-        -->
-
-        <section class="tournament" id="tournament">
-          <div class="container">
-
-            <div class="tournament-content">
-
-              <p class="tournament-subtitle">Check out our next</p>
-
-              <h2 class="h3 tournament-title">Gaming tournaments !</h2>
-
-              <p class="tournament-text">
-                Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.
-              </p>
-
-              <button class="btn btn-primary">Join with us</button>
-
-            </div>
-
-            <div class="tournament-prize">
-
-              <h2 class="h3 tournament-prize-title">Prize pool</h2>
-
-              <data value="80000">$80000</data>
-
-              <figure>
-                <img src="./assets/images/prize-img.png" alt="Prize image">
-              </figure>
-
-            </div>
-
-            <div class="tournament-winners">
-
-              <h2 class="h3 tournament-winners-title">Last winners</h2>
-
-              <ul class="tournament-winners-list">
-
-                <li>
-                  <div class="winner-card">
-
-                    <figure class="card-banner">
-                      <img src="./assets/images/winner-img-1.png" alt="Winner image">
-                    </figure>
-
-                    <h3 class="h5 card-title">1st place</h3>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="winner-card">
-
-                    <figure class="card-banner">
-                      <img src="./assets/images/winner-img-2.png" alt="Winner image">
-                    </figure>
-
-                    <h3 class="h5 card-title">2nd place</h3>
-
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-        </section>
-
-
-
-
-
-        <!-- 
-          - #GALLERY
-        -->
-
-        <section class="gallery">
-          <div class="container">
-
-            <ul class="gallery-list has-scrollbar">
-
-              <li>
-                <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-1.jpg" alt="Gallery image">
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-1.jpg" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
-              </li>
 
-              <li>
-                <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-2.jpg" alt="Gallery image">
-                </figure>
-              </li>
+                <div class="card-content">
 
-              <li>
-                <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-3.jpg" alt="Gallery image">
-                </figure>
-              </li>
+                  <a href="#" class="card-tag">Business</a>
 
-              <li>
-                <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-4.jpg" alt="Gallery image">
-                </figure>
-              </li>
+                  <ul class="card-meta-list">
 
-            </ul>
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-          </div>
-        </section>
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
 
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
 
+                  </ul>
 
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Season 5 Live BrutalExe vs Xyz.</a>
+                  </h3>
 
-        <!-- 
-          - #TEAM
-        -->
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
 
-        <section class="team" id="team">
-          <div class="container">
-
-            <h2 class="h2 section-title">Active Team Members</h2>
-
-            <ul class="team-list">
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-1.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-2.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-3.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-4.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-6.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-7.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-8.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-9.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-10.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-11.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-12.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-
-            <button class="btn btn-primary">view all members</button>
-
-          </div>
-        </section>
-
-
-
-
-
-        <!-- 
-          - #GEARS
-        -->
-
-        <section class="gears" id="gears">
-          <div class="container">
-
-            <h2 class="h2 section-title">check our gears</h2>
-
-            <ul class="gears-list">
-
-              <li>
-                <div class="gears-card">
-
-                  <div class="card-banner">
-
-                    <a href="#">
-                      <img src="./assets/images/gears-img-1.png" alt="Headphone">
-                    </a>
-
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Headphone</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$18</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
+                  <a href="#" class="link has-before">See Live</a>
 
                 </div>
-              </li>
 
-              <li>
-                <div class="gears-card">
-
-                  <div class="card-banner">
-
-                    <a href="#">
-                      <img src="./assets/images/gears-img-2.png" alt="Controller">
-                    </a>
-
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Controller</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$29</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="gears-card">
-
-                  <div class="card-banner">
-
-                    <a href="#">
-                      <img src="./assets/images/gears-img-3.png" alt="Gaming mask">
-                    </a>
-
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Gaming mask</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$45</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-              </li>
-
-            </ul>
-
-          </div>
-        </section>
-
-
-
-
-
-        <!-- 
-          - #NEWSLETTER
-        -->
-
-        <section class="newsletter">
-          <div class="container">
-
-            <div class="newsletter-card">
-
-              <div class="newsletter-content">
-                <figure class="newsletter-img">
-                  <img src="./assets/images/newsletter-img.png" alt="Newsletter image">
-                </figure>
-
-                <h2 class="h2 newsletter-title">Subscribe to our newsletter</h2>
               </div>
+            </li>
 
-              <form action="" class="newsletter-form">
-                <input type="email" name="email" required placeholder="Your Email Address" class="input-field">
+            <li data-reveal="bottom">
+              <div class="news-card">
 
-                <button type="submit" class="btn btn-secondary">Subscribe</button>
-              </form>
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-2.jpg" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                </figure>
 
-            </div>
+                <div class="card-content">
 
-          </div>
-        </section>
+                  <a href="#" class="card-tag">Startup</a>
 
-      </div>
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-3.jpg" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Finance</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
 
     </article>
   </main>
@@ -693,103 +439,43 @@
     - #FOOTER
   -->
 
-  <footer>
+  <footer class="footer">
 
-    <div class="footer-top">
+    <div class="section footer-top">
       <div class="container">
 
-        <div class="footer-brand-wrapper">
+        <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="BrutalExe logo">
+            <img src="./assets/images/logo.svg" width="150" height="73" loading="lazy" alt="Unigine logo">
           </a>
 
-          <div class="footer-menu-wrapper">
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
 
-            <ul class="footer-menu-list">
-
-              <li>
-                <a href="#hero" class="footer-menu-link">Home</a>
-              </li>
-
-              <li>
-                <a href="#about" class="footer-menu-link">About</a>
-              </li>
-
-              <li>
-                <a href="#tournament" class="footer-menu-link">Tournament</a>
-              </li>
-
-              <li>
-                <a href="#team" class="footer-menu-link">Team</a>
-              </li>
-
-              <li>
-                <a href="#gears" class="footer-menu-link">Gears</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-menu-link">Contact</a>
-              </li>
-
-            </ul>
-
-            <div class="footer-input-wrapper">
-              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input">
-
-              <button class="btn btn-primary">
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="footer-quicklinks">
-
-          <ul class="quicklink-list">
+          <ul class="social-list">
 
             <li>
-              <a href="#" class="quicklink-item">Faq</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-item">Help center</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-item">Terms of use</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-item">Privacy</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-social-list">
-
-            <li>
-              <a href="#" class="footer-social-link">
-                <ion-icon name="logo-discord"></ion-icon>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-social-link">
-                <ion-icon name="logo-twitch"></ion-icon>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-social-link">
-                <ion-icon name="logo-xbox"></ion-icon>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-social-link">
+              <a href="https://www.youtube.com/channel/UCI0YEAKVGUL9exUE_xq0RJg" class="social-link">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
@@ -798,18 +484,105 @@
 
         </div>
 
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              24 Deuripara, XYZ, 783380
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:exe4us.info@gmail.com" class="contact-link">exe4us.info@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+919101765679" class="contact-link">+91 9101765679</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form name="submit-to-google-sheet" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+          <span id="msg"></span>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzdOIk0ZDVOqIxUnPBShAIjdweMXpBEnKQWArq9_XwFHd47qKAp2ULPHWBGSctusRLvMQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                  msg.innerHTML = "Success!"
+                  setTimeout(function(){
+                    msg.innerHTML = ""
+                  },3000)
+                  form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        </div>
+
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
+
         <p class="copyright">
-          Copyright &copy; 2022 <a href="#">codewithsadee</a>. all rights reserved
+          &copy; 2022 Exe4Us All Rights Reserved.
         </p>
 
-        <figure class="footer-bottom-img">
-          <img src="./assets/images/footer-bottom-img.png" alt="Online payment companies logo">
-        </figure>
       </div>
     </div>
 
@@ -820,12 +593,22 @@
 
 
   <!-- 
-    - #GO TO TOP
+    - #BACK TO TOP
   -->
 
-  <a href="#top" class="btn btn-primary go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
   </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
 
 
 
