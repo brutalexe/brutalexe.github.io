@@ -7,11 +7,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  audio{
+      display: none;
+    }
+  </style>
 
   <!--
     - background audio
   -->
-  <audio autoplay src="./assets/music/intro.mp3" type="audio/mp3"></audio>
+  <audio controls autoplay>
+    <source src="./assets/music/intro.aac" type="audio/aac">
+    <source src="./assets/music/intro.mp3" type="audio/mpeg">
+    <source src="./assets/music/intro.ogg" type="audio/ogg">
+  </audio>
 
   <!-- 
     - primary meta tags
