@@ -5,7 +5,15 @@
 /**
  * copyright 2022 brutalexe
  */
-
+.right-col{
+  margin: auto;
+  padding-left: 20px;
+  width: 100px;
+}
+#icon{
+  width: 50px;
+  cursor: pointer;
+}
 
 
 
@@ -854,7 +862,7 @@ body {
   /**
    * HERO
    */
-
+  
   .hero .section-subtitle { letter-spacing: 10px; }
 
   .hero-banner-bg {

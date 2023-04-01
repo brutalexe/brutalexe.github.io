@@ -73,6 +73,30 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
+            <div class="right-col">
+              <img src="media/play.png" id="icon">
+            </div>
+            <audio id="mySong">
+              <source src="./media/background.mp3" type="audio/mp3">
+            </audio>
+          <script>
+          var mySong = document.getElementById("mySong");
+          var icon = document.getElementById("icon");
+          
+          icon.onclick = function(){
+              if(mySong.paused){
+                  mySong.play();
+                  icon.src = "media/pause.png";
+              }else{
+                  mySong.pause();
+                  icon.src = "media/play.png";
+              }
+          }
+          </script>
+  
+          </li>
+
+          <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>home</a>
           </li>
 
@@ -114,9 +138,10 @@
       -->
 
       <div class="hero has-before" id="home">
+        
         <div class="container">
 
-          <p class="section-subtitle">Enjoy The Games</p>
+          <p class="section-subtitle">Enjoy The Song</p>
 
           <h1 class="h1 title hero-title">Epic Tournaments Made For <br> True Gamers!</h1>
 
